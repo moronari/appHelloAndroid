@@ -19,4 +19,6 @@
     <string name="fiado">Fiado</string>
     <string name="cupom">Cupom</string>
     <string name="botao_calcular">Calcular</string>
+
+    <string name="saudacao">Olá %1$s</string>
 </resources>
