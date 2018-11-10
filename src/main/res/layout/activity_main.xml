@@ -4,94 +4,94 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ui.main.MainActivity">
-
-<LinearLayout
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context=".ui.main.MainActivity"
-    android:orientation="vertical">
-
-    <TextView
-        style="@style/label_titulo"
-        android:text="@string/label_dados_cliente"/>
-
-    <TextView
-        android:id="@+id/tvNome"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:hint="@string/nome_do_cliente" />
-
-    <TextView
-        style="@style/label_titulo"
-        android:text="@string/escolha"/>
+    tools:context="br.com.moronari.helloandroid.ui.main.MainActivity">
 
     <LinearLayout
-        style="@style/container_horizontal">
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".ui.main.MainActivity"
+        android:orientation="vertical">
 
-        <CheckBox
-            style="@style/checkbox_pizza"
-            android:text="@string/atum"/>
+        <TextView
+            style="@style/label_titulo"
+            android:text="@string/label_dados_cliente"/>
 
-        <CheckBox
-            style="@style/checkbox_pizza"
-            android:text="@string/bacon"/>
+        <TextView
+            android:id="@+id/tvNome"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/nome_do_cliente" />
+
+        <TextView
+            style="@style/label_titulo"
+            android:text="@string/escolha"/>
+
+        <LinearLayout
+            style="@style/container_horizontal">
+
+            <CheckBox
+                style="@style/checkbox_pizza"
+                android:text="@string/atum"/>
+
+            <CheckBox
+                style="@style/checkbox_pizza"
+                android:text="@string/bacon"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            style="@style/container_horizontal">
+
+            <CheckBox
+                style="@style/checkbox_pizza"
+                android:text="@string/calabreza"/>
+
+            <CheckBox
+                style="@style/checkbox_pizza"
+                android:text="@string/muzzarela"/>
+
+        </LinearLayout>
+
+        <TextView
+            style="@style/label_titulo"
+            android:text="@string/tamanho_da_pizza"/>
+
+        <RadioGroup
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <RadioButton
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/pequena"/>
+
+            <RadioButton
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/media"/>
+
+            <RadioButton
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/grande"/>
+
+        </RadioGroup>
+
+        <TextView
+            style="@style/label_titulo"
+            android:text="@string/pagamento"/>
+
+        <Spinner
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:entries="@array/formas_pagamento"/>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/botao_calcular"
+            android:background="@drawable/botao_personalizado"
+            android:textColor="#FFFFFF"/>
 
     </LinearLayout>
-
-    <LinearLayout
-        style="@style/container_horizontal">
-
-        <CheckBox
-            style="@style/checkbox_pizza"
-            android:text="@string/calabreza"/>
-
-        <CheckBox
-            style="@style/checkbox_pizza"
-            android:text="@string/muzzarela"/>
-
-    </LinearLayout>
-
-    <TextView
-        style="@style/label_titulo"
-        android:text="@string/tamanho_da_pizza"/>
-
-    <RadioGroup
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content">
-
-        <RadioButton
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="@string/pequena"/>
-
-        <RadioButton
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="@string/media"/>
-
-        <RadioButton
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="@string/grande"/>
-
-    </RadioGroup>
-
-    <TextView
-        style="@style/label_titulo"
-        android:text="@string/pagamento"/>
-
-    <Spinner
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:entries="@array/formas_pagamento"/>
-
-    <Button
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="@string/botao_calcular"
-        android:background="@drawable/botao_personalizado"
-        android:textColor="#FFFFFF"/>
-
-</LinearLayout>
 </ScrollView>

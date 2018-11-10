@@ -17,6 +17,8 @@
             </intent-filter>
         </activity>
         <activity android:name=".ui.login.LoginActivity" />
+        <activity android:name="br.com.moronari.helloandroid.ui.login.LoginActivity" />
+        <activity android:name="br.com.moronari.helloandroid.ui.main.MainActivity"></activity>
     </application>
 
 </manifest>
